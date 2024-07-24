@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Application2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your details</title>
+</head>
+<body>
+    <style>
+    html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("compassion1.jpg");
+    background-size: 1350px 610px;
+    right: 10px;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
+     <fieldset class="child">
+        <legend>About the child.</legend>
+        <div>
+            <label for="child-name">Child's name: </label><br>
+            <input type="text" placeholder="As on the birth certificate" required>*
+        </div>
+        <div>
+            <label for="age-group">Age bracket: </label><br>
+            <select name="Age bracket" id="" required>
+                <option value="infant">0-2 years</option>
+                <option value="baby">3-5 years</option>
+            </select>
+        </div>
+        <div>
+            <label for="exact-age">Exact age: </label><br>
+            <input type="number" placeholder="Child's age" min="0"  required>*
+        </div>
+        <div>
+            <label for="date">Date of birth: </label><br>
+            <input type="date" placeholder="DOB" required>*
+        </div>
+        <div>
+            <label for="health">Any chronic illness? </label><br>
+            <input type="radio" name="illness" value="Yes">Yes
+            <input type="radio" name="illness" value="No">No
+        </div>
+        <div>
+            <label for="special-need">Any form of disability? </label><br>
+            <input type="radio" name="disability" value="Yes">Yes
+            <input type="radio" name="disability" value="No">No
+        </div>
+        <div>
+            <label for="image">Provide the child's current photo: </label><br>
+            <input type="file" id="image" name="child's-pic" accept="image/*" required>*
+        </div>
+          
+    </fieldset>
+   
+    <fieldset class="family">
+        <legend>About the family.</legend>
+        <div>
+            <label for="residence">Where do you live?</label><br>
+            <input type="text" placeholder="Area of residence" required>*
+        </div>
+        <div>
+            <label for="with the child">Do you live with the child?</label><br>
+            <input type="radio" name="live with" value="Yes">Yes
+            <input type="radio" name="live with" value="No">No
+        </div>
+        <div>
+            <label for="if no">If no, who does?</label><br>
+            <select name="who-lives-with-child" id="">
+                <option value="sibling">Older sibling</option>
+                <option value="uncle">Uncle</option>
+                <option value="aunt">Aunt</option>
+                <option value="grandparent">Grandparent(s)</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="other siblings">How many people live with the child: </label><br>
+            <input type="number" min="1" required>*
+        </div>
+    </fieldset>
+
+    <fieldset class="other">
+        <legend>Other.</legend>
+        <div>
+            <label for="other help">Is the child a beneficiary of another <br>support organization?</label><br>
+            <input type="radio" name="other help" value="Yes">Yes
+            <input type="radio" name="öther help" value=""No>No
+        </div>
+        <div>
+            <label for="parental care">What is the child's parental<br>status?</label><br>
+            <input type="checkbox" name="both" value="both parents">Has both parents<br>
+            <input type="checkbox" name="orphaned" value="orphaned">Orphaned<br>
+            <input type="checkbox" name="single" value="single parent">Single parent<br>
+            <input type="checkbox" name="abandoned" value="abandoned">Abandoned by parent(s)
+        </div>
+    </fieldset>
+     
+</body>
+</html>

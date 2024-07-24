@@ -1,0 +1,149 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("compassion1.jpg");
+    background-size: 1350px 610px;
+    right: 10px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.application-details{
+    text-align: center;
+    position: absolute;
+    border: 3px solid ;
+    border-color:  rgb(11, 100, 179);
+    /* border-radius: 5px; */
+    height: 280px;
+    width: 250px;
+    padding: 15px;
+    top: 32%;
+    left: 40%;
+    background-color: white ;
+}
+.sign{
+    /* position: absolute; */
+    background-color: rgb(237, 165, 20) ;
+
+}
+input{
+    width: 220px;
+}
+label{
+    position: absolute;
+    left: 8px;
+}
+select{
+    width: 235px;
+}
+nav{
+    position: sticky;
+    top: 1px;
+    background-color: rgb(11, 100, 179);
+    padding: 0;
+    margin: 0;
+    border: 0px;
+}
+ul{
+    margin: 0;
+}
+a{
+    display: inline-block;
+    font-size: 24px;
+}
+.pop-up{
+    border: 0;
+    margin: 0;
+
+}
+.about{
+    position: relative;
+    left: 10px;
+    width: max-content;
+    color:  rgb(237, 165, 20);
+    text-decoration: none;
+}
+.about p{
+    position: absolute;
+    transform: translateY(-700px);
+    width: 300px;
+
+}
+
+p{
+    color: black;
+    background-color: rgba(95, 94, 94, 0.752);
+}
+.contact{
+    position: relative;
+    width: max-content;
+    color:  rgb(237, 165, 20);
+    text-decoration: none;
+    left: 230px;
+}
+.contact p{
+    position: absolute;
+    transform: translateY(-400px);
+    width: max-content;
+}
+
+
+.values{
+    position: relative;
+    left: 600px;
+    width: max-content;
+    color:  rgb(237, 165, 20);
+    text-decoration: none;
+}
+.values p{
+    position: absolute;
+    transform: translateY(-400px);
+    width: max-content;
+} 
+.mission-vision{
+    position: relative;
+    left: 450px;
+    width: max-content;
+    color:  rgb(237, 165, 20);
+    text-decoration: none;
+}
+.mission-vision p{
+    position: absolute;
+    transform: translateY(-400px);
+    width: max-content;
+}
+.about:hover p{
+    animation: drop 1s linear forwards;
+}
+.values:hover p{
+    animation: drop 1s linear both;
+}
+.mission-vision:hover p{
+    animation: drop 1s linear both;
+}
+.contact:hover p{
+    animation: drop 1s linear both;
+
+}
+/* .refere{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+.submit a{
+    color: black;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    background-color: rgb(237, 165, 20);
+    border: 2px;
+    border-radius: 4px;
+    width: 70px;
+}
+@keyframes drop {
+    from{transform: translateY(-400px)}
+    to{transform:translateY(-24px)}
+}
+
